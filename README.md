@@ -1,3 +1,3 @@
-# SmartBoyAI.github.io
+# SmartBoyAI
 
 Coming Soon!
