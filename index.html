@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SmartBoy - AI-powered educational platform for grades 4-7. Personalized learning in Math, Science, Geography, and more. Safe, engaging, and effective.">
+    <meta name="keywords" content="educational app, AI learning, math practice, grade 4-7, personalized education, safe learning app">
+    <meta name="author" content="SmartBoy Educational Platform">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smartboy-edu.com/">
+    <meta property="og:title" content="SmartBoy - AI-Powered Learning for Grades 4-7">
+    <meta property="og:description" content="Personalized, AI-powered education that adapts to your child's learning pace. Safe, engaging, and effective.">
+    <meta property="og:image" content="./images/screenshots/feature.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://smartboy-edu.com/">
+    <meta property="twitter:title" content="SmartBoy - AI-Powered Learning for Grades 4-7">
+    <meta property="twitter:description" content="Personalized, AI-powered education that adapts to your child's learning pace.">
+    <meta property="twitter:image" content="./images/screenshots/feature.png">
+
+    <title>SmartBoy - AI-Powered Learning for Grades 4-7</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Swiper CSS for carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>SmartBoy</span>
+                </div>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#subjects" class="nav-link">Subjects</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li><a href="#safety" class="nav-link">Safety</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#download" class="nav-link btn-primary">Download</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="hero-title">
+                    AI-Powered Learning<br>
+                    That Adapts to <span class="gradient-text">Your Child</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Personalized education for grades 4-7. Practice Math, Science, Geography, and more with AI-generated questions that match your child's learning pace.
+                </p>
+                <div class="hero-cta">
+                    <a href="https://play.google.com/store/apps/details?id=tuanorg.smartboy&pcampaignid=web_share" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+                        <i class="fab fa-android"></i> Download for Android
+                    </a>
+                    <a href="#features" class="btn btn-outline btn-large">
+                        Learn More <i class="fas fa-arrow-down"></i>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-number">11</div>
+                        <div class="stat-label">Subjects</div>
+                    </div>
+                    <div class="stat" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Safe & Ad-Free</div>
+                    </div>
+                    <div class="stat" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Available</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+                <img src="./images/screenshots/feature.png" alt="SmartBoy App Screenshot">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Powerful Learning Features</h2>
+                <p class="section-subtitle">Everything your child needs to excel in their studies</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI-Generated Mathematics</h3>
+                    <p>Adaptive question generation creates personalized math problems based on your child's performance across 6 difficulty levels.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Addition, subtraction, multiplication, division</li>
+                        <li><i class="fas fa-check"></i> Fractions and algebra</li>
+                        <li><i class="fas fa-check"></i> Instant feedback with explanations</li>
+                        <li><i class="fas fa-check"></i> Smart weak area targeting</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Knowledge-Based Quizzes</h3>
+                    <p>Comprehensive quizzes across 11 subjects with AI-powered feedback and visual learning aids.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Multiple-choice and free-text questions</li>
+                        <li><i class="fas fa-check"></i> Personalized AI feedback on answers</li>
+                        <li><i class="fas fa-check"></i> Visual aids with diagrams</li>
+                        <li><i class="fas fa-check"></i> Session tracking for progress</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Multiplication Mastery</h3>
+                    <p>Two engaging modes to build multiplication fluency with global leaderboards and personal bests.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> 100-second timed challenge</li>
+                        <li><i class="fas fa-check"></i> 88 facts range practice</li>
+                        <li><i class="fas fa-check"></i> Global leaderboard rankings</li>
+                        <li><i class="fas fa-check"></i> Track improvement over time</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-spell-check"></i>
+                    </div>
+                    <h3>Dictation Practice</h3>
+                    <p>Interactive spelling exercises with text-to-speech pronunciation and custom word lists.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Text-to-Speech pronunciation</li>
+                        <li><i class="fas fa-check"></i> Study mode before practice</li>
+                        <li><i class="fas fa-check"></i> Integrated mobile keypad</li>
+                        <li><i class="fas fa-check"></i> Custom word list integration</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>AI-Powered Help System</h3>
+                    <p>Revolutionary learning assistance that teaches concepts without giving away answers.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Similar question with step-by-step solution</li>
+                        <li><i class="fas fa-check"></i> Detailed explanations after submission</li>
+                        <li><i class="fas fa-check"></i> Visual diagrams and illustrations</li>
+                        <li><i class="fas fa-check"></i> Available for all subjects</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Performance Reports</h3>
+                    <p>Comprehensive AI-generated reports showing strengths, weaknesses, and personalized recommendations.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Overall performance tracking</li>
+                        <li><i class="fas fa-check"></i> Subject-wise analysis</li>
+                        <li><i class="fas fa-check"></i> AI recommendations for improvement</li>
+                        <li><i class="fas fa-check"></i> Historical trend tracking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why SmartBoy Section -->
+    <section class="why-smartboy" id="why">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Why Choose SmartBoy?</h2>
+                <p class="section-subtitle">See how we're different from traditional learning methods</p>
+            </div>
+            
+            <div class="comparison-table" data-aos="fade-up" data-aos-delay="200">
+                <div class="comparison-header">
+                    <div class="comparison-col">Traditional Method</div>
+                    <div class="comparison-col highlight">SmartBoy Platform</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell">Generic paper worksheets</div>
+                    <div class="comparison-cell highlight">
+                        <i class="fas fa-check-circle"></i> AI-personalized questions
+                    </div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell">One-size-fits-all approach</div>
+                    <div class="comparison-cell highlight">
+                        <i class="fas fa-check-circle"></i> Adapts to student level
+                    </div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell">Manual grading (time-consuming)</div>
+                    <div class="comparison-cell highlight">
+                        <i class="fas fa-check-circle"></i> Instant AI evaluation
+                    </div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell">Limited practice sessions</div>
+                    <div class="comparison-cell highlight">
+                        <i class="fas fa-check-circle"></i> Unlimited practice 24/7
+                    </div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell">No progress tracking</div>
+                    <div class="comparison-cell highlight">
+                        <i class="fas fa-check-circle"></i> Detailed analytics & reports
+                    </div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell">Expensive tutoring needed</div>
+                    <div class="comparison-cell highlight">
+                        <i class="fas fa-check-circle"></i> AI tutor built-in
+                    </div>
+                </div>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-clock"></i>
+                    <h4>Save Time</h4>
+                    <p>Students practice independently while parents monitor progress remotely</p>
+                </div>
+                <div class="benefit-card" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-bullseye"></i>
+                    <h4>Targeted Practice</h4>
+                    <p>AI automatically focuses on weak areas for faster improvement</p>
+                </div>
+                <div class="benefit-card" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fas fa-trophy"></i>
+                    <h4>Better Results</h4>
+                    <p>Personalized learning improves retention and understanding</p>
+                </div>
+                <div class="benefit-card" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fas fa-smile"></i>
+                    <h4>Build Confidence</h4>
+                    <p>Gamification and instant feedback keep students motivated</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Get started in 4 simple steps</p>
+            </div>
+            
+            <div class="steps-container">
+                <div class="step" data-aos="fade-right" data-aos-delay="100">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <i class="fas fa-user-plus"></i>
+                        <h3>Sign Up</h3>
+                        <p>Quick and secure registration using Google Sign-In. No complex forms!</p>
+                    </div>
+                </div>
+                
+                <div class="step" data-aos="fade-right" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Choose Grade Level</h3>
+                        <p>Select your child's grade (4-7) to get age-appropriate content</p>
+                    </div>
+                </div>
+                
+                <div class="step" data-aos="fade-right" data-aos-delay="300">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <i class="fas fa-play-circle"></i>
+                        <h3>Start Practicing</h3>
+                        <p>Choose a subject and let AI generate personalized questions</p>
+                    </div>
+                </div>
+                
+                <div class="step" data-aos="fade-right" data-aos-delay="400">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Track Progress</h3>
+                        <p>Monitor improvement with detailed reports and analytics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section class="subjects" id="subjects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Subjects We Cover</h2>
+                <p class="section-subtitle">11 comprehensive subjects for grades 4-7</p>
+            </div>
+            
+            <div class="subjects-grid">
+                <div class="subject-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="subject-icon">🔬</div>
+                    <h4>Science</h4>
+                    <p>Biology, Chemistry, Physics</p>
+                </div>
+                <div class="subject-card" data-aos="flip-left" data-aos-delay="150">
+                    <div class="subject-icon">🧮</div>
+                    <h4>Mathematics</h4>
+                    <p>Advanced problem-solving</p>
+                </div>
+                <div class="subject-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="subject-icon">🌍</div>
+                    <h4>Geography</h4>
+                    <p>Countries, capitals, features</p>
+                </div>
+                <div class="subject-card" data-aos="flip-left" data-aos-delay="250">
+                    <div class="subject-icon">💻</div>
+                    <h4>IT/Technology</h4>
+                    <p>Computers, programming basics</p>
+                </div>
+                <div class="subject-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="subject-icon">🇫🇷</div>
+                    <h4>French</h4>
+                    <p>Language fundamentals</p>
+                </div>
+                <div class="subject-card" data-aos="flip-left" data-aos-delay="350">
+                    <div class="subject-icon">📖</div>
+                    <h4>English</h4>
+                    <p>Grammar, comprehension</p>
+                </div>
+                <div class="subject-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="subject-icon">🔢</div>
+                    <h4>Abacus</h4>
+                    <p>Mental arithmetic training</p>
+                </div>
+                <div class="subject-card" data-aos="flip-left" data-aos-delay="450">
+                    <div class="subject-icon">📜</div>
+                    <h4>History</h4>
+                    <p>World history and events</p>
+                </div>
+                <div class="subject-card" data-aos="flip-left" data-aos-delay="500">
+                    <div class="subject-icon">🌿</div>
+                    <h4>Nature</h4>
+                    <p>Animals, plants, ecosystems</p>
+                </div>
+                <div class="subject-card" data-aos="flip-left" data-aos-delay="550">
+                    <div class="subject-icon">🚀</div>
+                    <h4>Space</h4>
+                    <p>Astronomy and universe</p>
+                </div>
+                <div class="subject-card" data-aos="flip-left" data-aos-delay="600">
+                    <div class="subject-icon">⚙️</div>
+                    <h4>Technology</h4>
+                    <p>Inventions, modern tech</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <p class="section-subtitle">Choose the plan that works best for your family</p>
+            </div>
+            
+            <div class="pricing-toggle" data-aos="fade-up" data-aos-delay="100">
+                <span class="toggle-label">Monthly</span>
+                <label class="switch">
+                    <input type="checkbox" id="pricingToggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">Yearly <span class="save-badge">Save 33%</span></span>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Free Tier -->
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-header">
+                        <h3>Free</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">0</span>
+                            <span class="period">/forever</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 5 AI questions per day</li>
+                        <li><i class="fas fa-check"></i> Basic progress tracking</li>
+                        <li><i class="fas fa-check"></i> Limited subject access</li>
+                        <li><i class="fas fa-check"></i> Standard support</li>
+                        <li class="unavailable"><i class="fas fa-times"></i> Offline mode</li>
+                        <li class="unavailable"><i class="fas fa-times"></i> Performance reports</li>
+                        <li class="unavailable"><i class="fas fa-times"></i> Unlimited AI help</li>
+                    </ul>
+                    <a href="https://play.google.com/store/apps/details?id=tuanorg.smartboy&pcampaignid=web_share" class="btn btn-outline" target="_blank" rel="noopener">Try Free</a>
+                </div>
+                
+                <!-- Premium Monthly/Yearly -->
+                <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="300">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount" id="premiumPrice">4.99</span>
+                            <span class="period" id="premiumPeriod">/month</span>
+                        </div>
+                        <div class="savings" id="premiumSavings"></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> <strong>Unlimited</strong> AI questions</li>
+                        <li><i class="fas fa-check"></i> Advanced analytics & reports</li>
+                        <li><i class="fas fa-check"></i> All subjects & grade levels</li>
+                        <li><i class="fas fa-check"></i> Difficulty adaptation</li>
+                        <li><i class="fas fa-check"></i> Full offline mode</li>
+                        <li><i class="fas fa-check"></i> Unlimited AI help with visuals</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> Global leaderboards</li>
+                    </ul>
+                    <a href="https://play.google.com/store/apps/details?id=tuanorg.smartboy&pcampaignid=web_share" class="btn btn-primary" target="_blank" rel="noopener">Get Started</a>
+                </div>
+                
+                <!-- Family Plan -->
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="pricing-header">
+                        <h3>Family</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">59.99</span>
+                            <span class="period">/year</span>
+                        </div>
+                        <div class="savings">Up to 4 children</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Everything in Premium</li>
+                        <li><i class="fas fa-check"></i> <strong>4 separate profiles</strong></li>
+                        <li><i class="fas fa-check"></i> Individual progress tracking</li>
+                        <li><i class="fas fa-check"></i> Family dashboard</li>
+                        <li><i class="fas fa-check"></i> Best value per child</li>
+                        <li><i class="fas fa-check"></i> Annual billing only</li>
+                    </ul>
+                    <a href="https://play.google.com/store/apps/details?id=tuanorg.smartboy&pcampaignid=web_share" class="btn btn-outline" target="_blank" rel="noopener">Get Family Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots" id="screenshots">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">See SmartBoy in Action</h2>
+                <p class="section-subtitle">Beautiful, intuitive interface designed for kids</p>
+            </div>
+            
+            <div class="swiper screenshotsSwiper" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/screenshots/Screenshot_20251231-134249.png" alt="SmartBoy Home Screen">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/screenshots/Screenshot_20251231-135028.png" alt="Math Questions">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/screenshots/Screenshot_20251231-135103.png" alt="Knowledge Quiz">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/screenshots/Screenshot_20251231-135203.png" alt="AI Help System">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/screenshots/Screenshot_20251231-135230.png" alt="Performance Report">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/screenshots/Screenshot_20251231-135247.png" alt="Multiplication Game">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/screenshots/Screenshot_20251231-135311.png" alt="Dictation Practice">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/screenshots/Screenshot_20251231-135354.png" alt="Subject Selection">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety & Privacy Section -->
+    <section class="safety" id="safety">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Your Child's Safety is Our Priority</h2>
+                <p class="section-subtitle">Built with privacy and security at the core</p>
+            </div>
+            
+            <div class="safety-grid">
+                <div class="safety-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="safety-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>COPPA Compliant</h3>
+                    <p>Fully compliant with Children's Online Privacy Protection Act regulations</p>
+                </div>
+                
+                <div class="safety-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="safety-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Secure Authentication</h3>
+                    <p>Firebase Google Sign-In ensures safe and easy access control</p>
+                </div>
+                
+                <div class="safety-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="safety-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Encrypted Storage</h3>
+                    <p>All user data is encrypted at rest and in transit</p>
+                </div>
+                
+                <div class="safety-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="safety-icon">
+                        <i class="fas fa-ad"></i>
+                    </div>
+                    <h3>No Third-Party Ads</h3>
+                    <p>Clean, safe environment free from external advertisements</p>
+                </div>
+                
+                <div class="safety-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="safety-icon">
+                        <i class="fas fa-eye-slash"></i>
+                    </div>
+                    <h3>Privacy First</h3>
+                    <p>Minimal data collection - we only collect what's necessary</p>
+                </div>
+                
+                <div class="safety-card" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="safety-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>GDPR & FERPA</h3>
+                    <p>Compliant with global privacy regulations and educational standards</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">What Parents Are Saying</h2>
+                <p class="section-subtitle">Real feedback from families using SmartBoy</p>
+            </div>
+            
+            <div class="swiper testimonialsSwiper" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="testimonial-text">
+                                "My daughter's multiplication skills improved dramatically in just 2 months! The AI questions are perfect for her level."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">👩</div>
+                                <div class="author-info">
+                                    <div class="author-name">Sarah M.</div>
+                                    <div class="author-role">Parent, Grade 5 Student</div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="testimonial-text">
+                                "Finally, an app that makes learning fun! My son actually asks to practice math now."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">👨</div>
+                                <div class="author-info">
+                                    <div class="author-name">Michael R.</div>
+                                    <div class="author-role">Parent, Grade 6 Student</div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="testimonial-text">
+                                "The performance reports help me understand exactly where my child needs help. Worth every penny!"
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">👩</div>
+                                <div class="author-info">
+                                    <div class="author-name">Jennifer L.</div>
+                                    <div class="author-role">Parent, Grade 4 Student</div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Got questions? We've got answers</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <button class="faq-question">
+                        <span>Is SmartBoy safe for children?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! SmartBoy is fully COPPA compliant, uses secure Firebase authentication, and contains no third-party advertisements. We prioritize your child's safety and privacy above all else.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                    <button class="faq-question">
+                        <span>Does it work offline?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Premium users get full offline mode for core features including practice sessions and reviewing previous work. Free users need an internet connection to generate new AI questions.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <button class="faq-question">
+                        <span>What devices are supported?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Currently, SmartBoy is available for Android devices running Android 7.0 or higher. An iOS version for iPhone and iPad is coming soon.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                    <button class="faq-question">
+                        <span>Can multiple children use one account?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! The Family Plan ($59.99/year) supports up to 4 children with separate profiles and individual progress tracking. This is the best value for families with multiple students.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <button class="faq-question">
+                        <span>How does the AI generate questions?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We use advanced AI models (Gemini 2.0 Flash) to create curriculum-aligned questions based on your child's grade level and performance history. The AI adapts difficulty and focuses on weak areas automatically.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+                    <button class="faq-question">
+                        <span>Can I cancel my subscription anytime?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! You can cancel your subscription at any time through your account settings. There are no cancellation fees or penalties.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <button class="faq-question">
+                        <span>How much does it cost?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>SmartBoy offers a free tier with 5 AI questions per day. Premium plans start at $4.99/month or $39.99/year (save 33%). Family plans are $59.99/year for up to 4 children.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="450">
+                    <button class="faq-question">
+                        <span>What if my child needs help with a question?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>SmartBoy includes an AI-powered help system that provides step-by-step explanations and visual aids. Premium users get unlimited access to this feature across all subjects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA Section -->
+    <section class="download-cta" id="download">
+        <div class="container">
+            <div class="download-content" data-aos="fade-up">
+                <h2>Ready to Transform Your Child's Learning?</h2>
+                <p>Download SmartBoy today and start with our free plan. No credit card required!</p>
+                
+                <div class="download-buttons">
+                    <a href="https://play.google.com/store/apps/details?id=tuanorg.smartboy&pcampaignid=web_share" class="btn btn-download" target="_blank" rel="noopener">
+                        <i class="fab fa-google-play"></i>
+                        <div class="btn-text">
+                            <span class="small">GET IT ON</span>
+                            <span class="large">Google Play</span>
+                        </div>
+                    </a>
+                    <a href="#" class="btn btn-download disabled">
+                        <i class="fab fa-apple"></i>
+                        <div class="btn-text">
+                            <span class="small">Coming Soon on</span>
+                            <span class="large">App Store</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="download-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <span>Trusted by thousands of families</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-star"></i>
+                        <span>4.8+ average rating</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>100% safe & secure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-brain"></i>
+                        <span>SmartBoy</span>
+                    </div>
+                    <p class="footer-description">
+                        AI-powered educational platform helping students in grades 4-7 excel in their studies with personalized learning.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#subjects">Subjects</a></li>
+                        <li><a href="#screenshots">Screenshots</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="mailto:smartboyai.app@gmail.com">Email Support</a></li>
+                        <li><a href="https://wa.me/94769105555" target="_blank">WhatsApp Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+94769105555">+94 769 105 555</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/94769105555" target="_blank">WhatsApp</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:smartboyai.app@gmail.com">smartboyai.app@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 SmartBoy Educational Platform. All rights reserved.</p>
+                <p class="version">Version 1.0.0.20</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/pricing.js"></script>
+</body>
+</html>
